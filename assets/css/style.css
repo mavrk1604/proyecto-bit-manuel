@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --dark-bg: #1F1F1F;
+  --teal-light: #80E0AA;
+  --teal-dark: #223D2E;
+  --red-lighter: #ff7f78;
+  --red-light: #FF635B;
+  --red-dark: #401E1D;
+  --grey-light: #E7E7E7;
+  --grey-dark: #464646;
+}
+
+@font-face {
+  font-family: playwrite;
+  src: url('/assets/fonts/PlaywriteUSTrad-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: helvetica-regular;
+  src: url('/assets/fonts/HelveticaWorld-Regular.ttf');
+}
+
+@font-face {
+  font-family: spacegrotesk;
+  src: url('/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-bg);
+  width: 100%;
+  padding: 8px;
+}
+
+.navbar__logo a {
+  font-family: playwrite;
+  color: var(--teal-light);
+  font-size: 2rem;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.navbar__logo a:hover {
+  color: var(--red-light);
+}
+
+.navbar__buttons {
+  display: flex;
+  gap: 15px;
+  margin-right: 15px;
+}
+
+.signup__button,
+.login__button {
+  font-family: helvetica-regular;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 20px;
+  width: 110px;
+  text-align: center;
+}
+
+.signup__button {
+  background-color: var(--dark-bg);
+  color: var(--teal-light);
+  padding: 7px 15px;
+  border: 2px solid var(--teal-light);
+  transition: 0.2s;
+}
+
+.signup__button:hover {
+  color: var(--red-light);
+  border: 2px solid var(--red-light);
+}
+
+.login__button {
+  background-color: var(--teal-light);
+  color: var(--dark-bg);
+  padding: 7px 15px;
+  transition: 0.2s;
+}
+
+.login__button:hover {
+  background-color: var(--red-light);
+  color: var (--dark-bg);
+}
+
+.navbar__buttons {
+  display: flex;
+  gap: 15px;
+  margin-right: 5px;
+}
+
+.calltoaction {
+  font-family: helvetica-regular;
+  display: flex;
+  justify-content: start;
+  flex-grow: 1;
+  padding-top: 50px;
+  background-color: var(--dark-bg);
+  flex: 1;
+}
+
+.calltoaction__text {
+  padding: 25px 30px;
+  width: 50%;
+  text-align: start;
+  color: white;
+  font-family: spacegrotesk;
+  font-size: 1rem;
+}
+
+.calltoaction__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.signup__button__start,
+.login__button__start {
+  font-family: helvetica-regular;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 10px 15px;
+  border-radius: 25px;
+  width: 250px;
+}
+
+.signup__button__start {
+  background-color: var(--teal-light);
+  color: var(--dark-bg);
+}
+
+.signup__button__start:hover {
+  background-color: var(--red-light);
+}
+
+.login__button__start {
+  background-color: var(--dark-bg);
+  color: var(--red-light);
+  border: 2px solid var(--red-light);
+}
+
+.login__button__start:hover {
+  background-color: var(--red-light);
+  color: var(--dark-bg);
+}
+
+.footer {
+  background-color: var(--teal-light);
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 13px;
+}
+
+.social__icons a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--red-light);
+  font-size: 3rem;
+  transition: 0.2s;
+}
+
+.social__icons i:hover {
+  color: var(--red-lighter);
+}
+
+@media (max-width: 426px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-bg);
+    width: 100%;
+    padding: 8px;
+    gap: 15px;
+  }
+
+  .calltoaction {
+    font-family: helvetica-regular;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 0px;
+    background-color: var(--dark-bg);
+    flex: 1;
+  }
+
+  .calltoaction__text {
+    padding: 25px 30px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-family: spacegrotesk;
+    font-size: 0.9rem;
+  }
+
+    .calltoaction__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 25px;
+      align-items:center;
+    }
+
+}
