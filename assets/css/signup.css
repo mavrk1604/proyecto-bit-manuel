@@ -111,65 +111,76 @@ body {
   margin-right: 5px;
 }
 
-.calltoaction {
+.mainsignup {
   font-family: helvetica-regular;
   display: flex;
+  /* flex-direction: row-reverse; */
   justify-content: start;
   flex-grow: 1;
   padding-top: 10px;
+  padding-left: 25px;
   background-color: var(--dark-bg);
   flex: 1;
+  gap: 10%;
 }
 
-.calltoaction__text {
+.mainsignup__text {
   padding: 25px 30px;
   width: 50%;
   text-align: start;
   color: white;
   font-family: spacegrotesk;
   font-size: 1rem;
+  width: 50%;
 }
 
-.calltoaction__buttons {
+.mainsignup__text p {
+  padding-top: 15px;
+  font-family: playwrite;
+  font-size: 4rem;
+  color: var(--teal-light);
+}
+
+.mainsignup__form {
+  background-color: var(--grey-light);
+  border-radius: 30px;
+  height: fit-content;
+}
+
+.mainsignup__form form {
+  padding: 25px 30px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 25px;
-  text-align: center;
+  gap: 8px;
+  margin: 10px;
 }
 
-.signup__button__start,
-.login__button__start {
+.mainsignup__form input {
+  font-family: spacegrotesk;
+  border-radius: 15px;
+  padding: 8px;
+  border: none;
+  /* box-shadow: inset 1px 1px 4px black; */
+}
+
+.mainsignup__form button {
+  background-color: var(--red-light);
+  color: var(--dark-bg);
   font-family: helvetica-regular;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.25rem;
-  padding: 10px 15px;
+  font-size: 0.90rem;
+  padding: 6px 7.5px;
   border-radius: 25px;
-  width: 250px;
+  width: 100px;
   transition: 0.2s;
+  align-self: self-end;
+  border: none;
 }
 
-.signup__button__start {
-  background-color: var(--teal-light);
-  color: var(--dark-bg);
+.mainsignup__form button:hover {
+  background-color: var(--red-lighter);
 }
-
-.signup__button__start:hover {
-  background-color: var(--red-light);
-}
-
-.login__button__start {
-  background-color: var(--dark-bg);
-  color: var(--red-light);
-  border: 2px solid var(--red-light);
-}
-
-.login__button__start:hover {
-  background-color: var(--red-light);
-  color: var(--dark-bg);
-}
-
 .footer {
   background-color: var(--teal-light);
   text-align: center;
@@ -207,32 +218,4 @@ body {
     padding: 8px;
     gap: 15px;
   }
-
-  .calltoaction {
-    font-family: helvetica-regular;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    padding-top: 0px;
-    background-color: var(--dark-bg);
-    flex: 1;
-  }
-
-  .calltoaction__text {
-    padding: 25px 30px;
-    width: 90%;
-    text-align: center;
-    color: white;
-    font-family: spacegrotesk;
-    font-size: 0.9rem;
-  }
-
-    .calltoaction__buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 25px;
-      align-items:center;
-    }
-
 }

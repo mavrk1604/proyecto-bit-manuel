@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frodge</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/signup.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -15,19 +15,29 @@
       <a href="#">Frodge</a>
     </div>
     <div class="navbar__buttons">
-      <a href="/signup.html" class="signup__button">Sign Up</a>
+      <a href="#" class="signup__button">Sign Up</a>
       <a href="#" class="login__button">Log In</a>
     </div>
   </nav>
-  <main class="calltoaction">
-    <div class="calltoaction__text">
-      <h1>Crea tu lista de compras, revisa qué falta en tu despensa y obtén recetas con ingredientes frescos o próximos
-        a expirar,
-        todo en un mismo lugar.</h1>
-      <div class="calltoaction__buttons">
-        <a href="/signup.html" class="signup__button__start">Genial, ¡Vamos!</a>
-        <a href="#" class="login__button__start">Ya tengo una cuenta</a>
-      </div>
+  <main class="mainsignup">
+    <div class="mainsignup__text">
+      <h1>Ingresa tus datos para comenzar a ahorrar más y a desperdiciar menos con:</h1>
+      <p>Frodge</p>
+    </div>
+    <div class="mainsignup__form">
+      <form action="signup">
+        <label for="name"></label>
+        <input id="name" type="text" required placeholder="Nombre">
+        <label for="email"></label>
+        <input min="0" max="80" id="email" type="email" required placeholder="Correo">
+        <label for="phone"></label>
+        <input min="0" max="80" id="telefono" type="phone" required placeholder="Telefono">
+        <label for="password"></label>
+        <input min="0" max="80" id="password" type="password" required placeholder="Contraseña">
+        <label for="password"></label>
+        <input min="0" max="80" id="password" type="password" required placeholder="Confirmar Contraseña">
+        <button type="submit">Registrarme</button>
+      </form>
     </div>
   </main>
   <footer class="footer">
