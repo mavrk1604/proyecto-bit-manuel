@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frodge</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/shopping.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -19,28 +22,8 @@
       <img src="/assets/img/profilepic.png" alt="Profile Picture">
     </div>
   </nav>
-  <main class="maincards">
-    <div class="shopping">
-      <h3>Lista de compras</h3>
-      <h4>Haz una lista de los ingredientes que quieres comprar la próxima vez que vayas al supermercado para que no
-        olvides nada.</h4>
-      <img src="/assets/img/shoppingcart.svg" alt="Carrito de compras">
-      <a href="/shopping.html">Agrega al carrito</a>
-    </div>
-    <div class="pantry">
-      <h3>Despensa</h3>
-      <h4>Mira qué ingredientes tienes en tu casa, cuáles faltan y cuáles están próximos a caducar para que no se
-        desperdicien.</h4>
-      <img src="/assets/img/pantry.svg" alt="Despensa">
-      <a href="">Abrir despensa</a>
-    </div>
-    <div class="recipes">
-      <h3>Recetas</h3>
-      <h4>Mira recetas que puedes hacer con los ingredientes que tienes a la mano. ¡Ahórrate la ida al supermercado por
-        hoy!</h4>
-      <img src="/assets/img/recipes.svg" alt="Recetas">
-      <a href="">Ver Recetas</a>
-    </div>
+  <main id="itemscards" class="shoppingcards d-flex justify-content-between itemcard">
+    
   </main>
   <footer class="footer">
     <div class="social__icons">
@@ -58,6 +41,10 @@
       </a>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/shopping.js"></script>
 </body>
 
 </html>

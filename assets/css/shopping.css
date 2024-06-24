@@ -97,7 +97,7 @@ body {
   margin-right: 5px;
 }
 
-.maincards {
+.shoppingcards {
   font-family: helvetica-regular;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -112,16 +112,16 @@ body {
   scroll-snap-type: x mandatory;
 }
 
-.maincards h4 {
+.shoppingcards h4 {
   font-family: spacegrotesk;
 }
 
-.maincards img {
+.shoppingcards img {
   height: 80px;
   margin-top: auto;
 }
 
-.maincards a {
+.shoppingcards a {
   font-family: helvetica-regular;
   text-decoration: none;
   border-radius: 20px;
@@ -133,7 +133,7 @@ body {
   margin-top: auto;
 }
 
-.maincards a:hover {
+.shoppingcards a:hover {
   background-color: var(--teal-light);
   color: var(--grey-dark);
 }
@@ -179,7 +179,7 @@ body {
 }
 
 @media (max-width: 560px) {
-  .maincards {
+  .shoppingcards {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
