@@ -103,10 +103,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   flex-grow: 1;
-  padding: 25px;
+  padding: 20px;
   background-color: var(--dark-bg);
   flex: 1;
-  gap: 5%;
+  gap: 3%;
   justify-content: space-around;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -131,6 +131,9 @@ body {
   padding: 7px 15px;
   transition: 0.2s;
   margin-top: auto;
+  margin-bottom: 20px;
+  width: fit-content;
+  align-self: center;
 }
 
 .maincards a:hover {
@@ -159,7 +162,7 @@ body {
   align-content: center;
   justify-content: center;
   gap: 50px;
-  padding: 13px;
+  padding: 10px;
 }
 
 .social__icons a {
