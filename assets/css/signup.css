@@ -302,3 +302,31 @@ body {
     border: none;
   }
 }
+
+@media (max-width: 700px) {
+  .mainsignup__text {
+    padding: 25px 30px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-family: spacegrotesk;
+    font-size: 0.70rem;
+    width: 50%;
+  }
+
+  .mainsignup__text p {
+    font-family: playwrite;
+    font-size: 3rem;
+    color: var(--teal-light);
+    text-align: start;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .mainsignup__form {
+    background-color: var(--grey-light);
+    border-radius: 30px;
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+}
