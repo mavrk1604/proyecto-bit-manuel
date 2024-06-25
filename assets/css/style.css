@@ -28,17 +28,17 @@ body {
 
 @font-face {
   font-family: playwrite;
-  src: url('./assets/fonts/PlaywriteUSTrad-VariableFont_wght.ttf');
+  src: url('../fonts/PlaywriteUSTrad-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: helvetica-regular;
-  src: url('./assets/fonts/HelveticaWorld-Regular.ttf');
+  src: url('../fonts/HelveticaWorld-Regular.ttf');
 }
 
 @font-face {
   font-family: spacegrotesk;
-  src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+  src: url('../fonts/SpaceGrotesk-VariableFont_wght.ttf');
 }
 
 .navbar {
